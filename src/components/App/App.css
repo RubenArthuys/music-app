@@ -32,6 +32,11 @@
   color: #61dafb;
 }
 
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+}
+
 body, html, #root {
   height: 100%;
 }
@@ -59,12 +64,13 @@ a {
 }
 
 h2 {
-  text-decoration: none;
-  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 1.55rem;
 }
 
-.App {
-  
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
 }
